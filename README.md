@@ -5,10 +5,8 @@ on the live server --> https://h-solak.github.io/to-do-list-v1/
 
 
 Get the task done, delete it whenever you want!
-![20211208_180638](https://user-images.githubusercontent.com/81798435/145232110-a4594d5e-9a89-4536-9812-1992dda0680a.gif)
+![ezgif-2-94f04371344d](https://user-images.githubusercontent.com/81798435/145232311-de599dd8-212a-45f2-82b9-a89bc55231ea.gif)
 
 
-
-
-color palette: https://coolors.co/f72585-b5179e-7209b7-560bad-480ca8-3a0ca3-3f37c9-4361ee-4895ef-4cc9f0  
+color palette for this project: https://coolors.co/f72585-b5179e-7209b7-560bad-480ca8-3a0ca3-3f37c9-4361ee-4895ef-4cc9f0  
 
