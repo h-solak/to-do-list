@@ -1,20 +1,20 @@
-/*
-color palette
-https://coolors.co/f72585-b5179e-7209b7-560bad-480ca8-3a0ca3-3f37c9-4361ee-4895ef-4cc9f0
-*/
-body{
-    background-color: #1B262C;
+@import url('https://fonts.googleapis.com/css2?family=Varela+Round&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Readex+Pro&display=swap');
+body {
+    background-color: #2c3e50;
     color: #ffffff;
     text-align: center;
 }
 
-*{
+* {
     font-family: 'Readex Pro', sans-serif;
     font-weight: 400;
 }
 
+
 /*title*/
-h1{
+
+h1 {
     text-align: center;
     margin: 25px;
     letter-spacing: 5px;
@@ -22,225 +22,236 @@ h1{
     cursor: pointer
 }
 
-a{
+a {
     text-decoration: none;
     color: #fff;
 }
 
-#title-link{
+#title-link {
     display: block;
-    transition: 0.5s;
 }
 
-#title-link:hover{
+#title-link:hover {
     color: rgba(255, 255, 255, 0.8);
-    transform: scale(0.9);
 }
-
 
 
 /*---THE TOP INPUT ELEMENT---*/
-.center{
+
+.center {
     display: flex;
     justify-content: center;
 }
-#input-container{
+
+#input-container {
     display: flex;
     align-items: center;
     justify-content: space-between;
     background-color: rgb(250, 250, 250);
     border: none;
-    border-radius: 10px;
+    border-radius: 5px;
     height: 32px;
-    width: 35%;
-    transition: 0.5s;
+    width: 50%;
+    margin-bottom: 0px;
 }
 
-#input-container:hover{
+#input-container:hover {
     background-color: rgba(255, 255, 255, 0.8);
 }
 
+
 /*the text inside*/
-.input-text{
+
+.input-text {
     background: none;
     border: none;
     font-size: 18px;
-    width: 100%; /*uses the whole space inside of the inputs-container*/
+    width: 100%;
+    /*uses the whole space inside of the inputs-container*/
     cursor: pointer;
 }
 
-.input-text:focus{
+.input-text:focus {
     outline: none;
 }
 
-.input-text::placeholder{
+.input-text::placeholder {
     text-align: center;
 }
 
-.fa-tasks{
+.fa-list-check {
     margin-left: 6px;
     color: rgba(100, 100, 100, 0.8);
 }
 
-.fa-plus{
+.fa-plus {
     margin: 5px;
-    color: rgba(100, 100, 100, 0.8);
-    transition: 0.5s;
-    font-size: 12px;
+    color: rgba(100, 100, 100, 1);
+    font-size: 14px;
     display: flex;
     justify-content: right;
+    cursor: pointer;
 }
 
-.fa-plus:hover{
-    transform: rotate(180deg);
-}
-
-.fa-plus:active{
+.fa-plus:active {
     color: rgb(0, 0, 0);
 }
 
+
 /*New Task*/
 
-ul{
+ul {
     list-style: none;
     padding: 0;
 }
 
-li{
+li {
     width: 50%;
     font-size: 20px;
-    margin-top: 30px;
     margin-bottom: 25px;
     background-color: rgba(187, 225, 250, 0.5);
-    border:  2px solid rgba(204, 204, 204, 0.6);
-    border-radius: 10px;
+    border: 2px solid rgba(204, 204, 204, 0.6);
+    border-radius: 5px;
     display: inline-flex;
-    justify-content:space-between;
-    
+    justify-content: space-between;
     align-items: center;
     cursor: pointer;
 }
 
-li:hover{
+li:hover {
     background-color: rgba(187, 225, 250, 0.3);
 }
 
-li button{
+li button {
     font-size: 15px;
     background: none;
     border: none;
     font-weight: 700;
     color: #fff;
     cursor: pointer;
-    transition: 0.5s;
-    float:right;
+    float: right;
 }
 
-
-li button:hover{
-    transform: rotate(180deg);
+li button:hover {
+    color: #c0392b;
 }
 
-li button:active{
+li button:active {
     color: black;
 }
 
-.done{
-	background: #51DF70;
-	text-decoration: line-through;
+.done {
+    background: #27ae60;
+    text-decoration: line-through;
 }
 
-/*not letting the hover effect on li make the done effect look bad*/
-.done:hover{
-	background: #51DF70;
+.done:hover {
+    background: #27ae60;
 }
 
 .delete {
-	display: none;
+    display: none;
 }
 
 
 /*FOOTER*/
-.footer{
+
+.footer {
     padding: 5px 0 10px 0;
     width: 100%;
     top: 98%;
     position: fixed;
-    transform: translate(-50%,-50%);
+    transform: translate(-50%, -50%);
     background-color: rgba(0, 0, 0, 0.7);
     z-index: 1;
-  }
+}
 
-.fab{
+.fab {
     font-size: 20px;
 }
 
-.footer:hover{
-    color:rgba(255, 255, 255, 0.6);
+.footer:hover {
+    color: rgba(255, 255, 255, 0.6);
 }
 
 
 /*SHAKING EFFECT*/
+
 @-webkit-keyframes shake {
-    0% { -webkit-transform: translate(2px, 1px) rotate(0deg); } 
-    10% { -webkit-transform: translate(-1px, -2px) rotate(-1deg); }
-    20% { -webkit-transform: translate(-3px, 0px) rotate(1deg); }
-    30% { -webkit-transform: translate(0px, 2px) rotate(0deg); }
-    40% { -webkit-transform: translate(1px, -1px) rotate(1deg); }
-    50% { -webkit-transform: translate(-1px, 2px) rotate(-1deg); }
-    60% { -webkit-transform: translate(-3px, 1px) rotate(0deg); }
-    70% { -webkit-transform: translate(2px, 1px) rotate(-1deg); }
-    80% { -webkit-transform: translate(-1px, -1px) rotate(1deg); }
-    90% { -webkit-transform: translate(2px, 2px) rotate(0deg); }
-    100% { -webkit-transform: translate(1px, -2px) rotate(-1deg); }
+    0% {
+        -webkit-transform: translate(2px, 1px) rotate(0deg);
+    }
+    10% {
+        -webkit-transform: translate(-1px, -2px) rotate(-1deg);
+    }
+    20% {
+        -webkit-transform: translate(-3px, 0px) rotate(1deg);
+    }
+    30% {
+        -webkit-transform: translate(0px, 2px) rotate(0deg);
+    }
+    40% {
+        -webkit-transform: translate(1px, -1px) rotate(1deg);
+    }
+    50% {
+        -webkit-transform: translate(-1px, 2px) rotate(-1deg);
+    }
+    60% {
+        -webkit-transform: translate(-3px, 1px) rotate(0deg);
+    }
+    70% {
+        -webkit-transform: translate(2px, 1px) rotate(-1deg);
+    }
+    80% {
+        -webkit-transform: translate(-1px, -1px) rotate(1deg);
+    }
+    90% {
+        -webkit-transform: translate(2px, 2px) rotate(0deg);
+    }
+    100% {
+        -webkit-transform: translate(1px, -2px) rotate(-1deg);
+    }
 }
-.shake{
-    display:inline-block;
+
+.shake {
+    display: inline-block;
     color: red;
     -webkit-animation-name: shake;
     -webkit-animation-duration: 0.3s;
-    -webkit-transform-origin:50% 50%;
+    -webkit-transform-origin: 50% 50%;
     -webkit-animation-iteration-count: 0.5;
 }
 
 
 /*---FOR THE MOBILE SCREENS*/
-@media screen and (max-width: 980px){
 
-    h1{
-        font-size: 30px;
+@media screen and (max-width: 980px) {
+    h1 {
+        font-size: 28px;
         letter-spacing: 8px;
     }
-    
-    .input-text{
-        font-size: 15px;
+    .input-text {
+        font-size: 16px;
     }
-
-    #input-container{
+    #input-container {
         height: 24px;
-        width: 60%;
-        transition: 0.5s;
+        width: 100%;
     }
-
-    li{
-        width: 90%;
-        font-size: 15px;
+    li {
+        width: 75%;
+        font-size: 16px;
+        margin-bottom: 25px;
     }
-    li button{
+    li button {
         font-size: 12px;
     }
-    .footer{
+    .footer {
         font-size: 14px;
     }
-
-    .fab{
+    .fab {
         font-size: 18px;
     }
-    
-    .shake{
+    .shake {
         font-size: 10px;
     }
 }
-
-
-
