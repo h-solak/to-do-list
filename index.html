@@ -1,55 +1,54 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="Tasks, to-do, javascript">
+    <meta name="description" content="A website to keep track of your daily tasks!">
     <link rel="stylesheet" href="style.css">
     <link rel="icon" type="image/png" href="materials/favicon-light.png" id="dark-scheme-icon">
     <link rel="icon" type="image/png" href="materials/favicon.png" id="light-scheme-icon">
-    
-    <style>
-        @import url('https://fonts.googleapis.com/css2?family=Varela+Round&display=swap');
-        @import url('https://fonts.googleapis.com/css2?family=Readex+Pro&display=swap');
-    </style>
-    <script src="https://kit.fontawesome.com/47f38f5928.js" crossorigin="anonymous"></script>   
+    <script src="https://kit.fontawesome.com/260dc2fe64.js" crossorigin="anonymous"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <title>To-Do List</title>
 </head>
+
 <body>
-    <a id="title-link" href="index.html">
-        <h1>TO-DO LIST</h1>
-    </a>
+    <h1>TO-DO LIST</h1>
+
     <div class="center">
         <div id="input-container" class="center">
-            <i class="fas fa-tasks"></i>
-            <input
-                id="input-value"
-                class="input-text"
-                onblur="addTask()"
-                type="text"
-                placeholder="add some tasks here"
-                maxlength="50"
-            >
-            <i class="fas fa-plus"></i>
+            <i class="fa-solid fa-list-check"></i>
+            <input id="input-value" class="input-text" onblur="addTask()" type="text" placeholder="add some tasks here" maxlength="50">
+            <i class="fa-solid fa-plus"></i>
         </div>
+
     </div>
-    
+
     <!--Error message!!!-->
     <h5></h5>
 
     <!--New tasks will appear inside of this ul element-->
-    <!--DIV IS USELESS FOR NOW-->
-    <div class="wrapper">
-        <ul></ul>
+    <div>
+        <ul id="allTasks"></ul>
+        <div class="center-btn">
+            <button id="clear-all">
+                <i class="fa-regular fa-trash-can"></i> Clear All
+            </button>
+        </div>
     </div>
+
+
 
     <!--Footer-->
     <a class="footer" href="https://github.com/h-solak" target="_blank">
         Hasan Solak <i class="fab fa-github"></i>
     </a>
-    
+
 
     <script src="index.js"></script>
 </body>
+
 </html>
